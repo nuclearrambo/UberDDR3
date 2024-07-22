@@ -1827,7 +1827,7 @@ module ddr3_controller #(
                             /* verilator lint_off WIDTH */
                             if(lane == LANES - 1) begin
                             /* verilator lint_on WIDTH */
-                                state_calibrate <= BURST_WRITE;
+                                state_calibrate <= DONE_CALIBRATE;
                             end        
                             else begin
                                 lane <= lane + 1;
